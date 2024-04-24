@@ -9748,6 +9748,6 @@ img.position-absolute.bottom-0 {
 
 @media (min-width: 768px) {
   .w-md-auto {
-      width: auto !important;
+    width: auto !important;
   }
 }
