@@ -9741,8 +9741,13 @@ img.position-absolute.bottom-0 {
 .opacity-25 {
   opacity: 0.2;
 }
-
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: var(--primary) !important;
+}
+
+@media (min-width: 768px) {
+  .w-md-auto {
+      width: auto !important;
+  }
 }
