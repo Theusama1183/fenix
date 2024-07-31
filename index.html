@@ -1,595 +1,348 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      type="text/css"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="files/theme.css" type="text/css" />
-    <title>Home</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>Games</title>
   </head>
-
   <body>
-    <div class="header">
-      <div class="topbar bg-dark py-1">
-        <div class="container">
-          <div class="text-right">
-            <i class="fa fa-instagram text-light px-1" aria-hidden="true"></i>
-            <i class="fa fa-facebook text-light px-1" aria-hidden="true"></i>
-            <i
-              class="fa fa-youtube-play text-light px-1"
-              aria-hidden="true"
-            ></i>
-            <i class="fa fa-envelope text-light px-1" aria-hidden="true"></i>
+    <!-- Header -->
+    <header class="header">
+      <div class="container p-0">
+        <nav class="navebar">
+          <div class="logo">
+            <img src="images/default-logo.png" alt="" />
           </div>
+          <div class="toggal-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+        <div class="overlay"></div>
+        <div class="menu-wrapper">
+          <div class="close-btn">
+            <img src="images/close-icon.png" alt="" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="games.html">games</a></li>
+          </ul>
         </div>
       </div>
-      <nav class="navbar navbar-expand-md navbar-light bg-white">
-        <div class="container">
-          <a class="navbar-brand text-primary" href="/"
-            ><img src="images/Logo.svg" class="img-fluid" alt=""
-          /></a>
-          <button
-            class="navbar-toggler navbar-toggler-right border-0"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbar4"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar4">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item px-2">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="Services">Services</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="About-us-html">About Us</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="Products.html">Products</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="Contact.html">Contact</a>
-              </li>
-            </ul>
-            <a
-              href="tel:480-788-0399"
-              class="btn navbar-btn ml-md-2 py-2 px-3 btn-primary text-light"
-              ><i class="fa fa-phone fa-fw mr-1"></i>480 - 788- 0399</a
-            >
-          </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container text-center">
+        <h1 class="fw-regular text-white">
+          PC gaming news, <br />
+          reviews, and guides
+        </h1>
+        <div class="hero-links">
+          <a href="#">About Us</a>
+          |
+          <a href="#">News</a>
+          |
+          <a href="#">Reviews</a>
+          |
+          <a href="#">#Future</a>
         </div>
-      </nav>
-      <div class="bottombar bg-secondary py-1">
-        <div class="container">
-          <div class="text-center text-light">
-            Now Offering discounts on your first session!
-            <a class="text-light" href="#">Click here</a> to learn more
-          </div>
-        </div>
+        <button class="btn border text-white">Learn More</button>
       </div>
-    </div>
-    <section
-      class="hero-section py-5 text-center text-white align-items-center d-flex"
-    >
-      <div class="video">
-        <video autoplay="" loop="" muted="" playsinline="" id="videoStyle">
-          <source
-            src="https://4b257b6f09a62e5d15dc-d9250c3f9511205a8154282ed9e99ef5.ssl.cf2.rackcdn.com/Fenix%20PT/FenixPT%20Hero%20Video%202bit.mp4"
-            type="video/mp4"
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+      <div class="container">
+        <div class="heading-block">
+          <h2 class="text-right font-ubuntu fw-regular">
+            Benefits of <span style="font-weight: 700">Video Games</span> <br />
+            For Kids & Adults
+          </h2>
+          <img
+            src="images/primary-circle.jpeg"
+            class="primary-circle-img"
+            alt=""
           />
-        </video>
-      </div>
-      <div class="container py-5">
-        <div class="row">
-          <div class="mx-auto col-lg-12 col-md-12">
-            <h3 class="display-2">
-              We Provide Healthcare the Way it Should Be
-            </h3>
-          </div>
         </div>
-      </div>
-    </section>
-    <section
-      class="text-center text-white d-flex align-items-start overlap-section"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-2 mb-md-0">
-            <div class="physical-therapy p-3 p-md-4">
-              <div class="space py-4"></div>
-              <h3 class="display-1 text-center">Physical <br />Therapy</h3>
-              <a class="btn btn-primary px-3 py-2 mt-3" href="services.html"
-                >Learn More</a
+        <div class="benefits-wrapper">
+          <div class="img-wrapper">
+            <img src="/images/benefit-img.jpeg" alt="" />
+            <div class="svg-wrapper">
+              <svg
+                class="u-svg-content"
+                viewBox="0 0 160 160"
+                x="0px"
+                y="0px"
+                id="svg-c5ad"
+                fill="#e5bb8d"
               >
+                <path
+                  d="M80,30c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50S52.4,30,80,30 M80,0C35.8,0,0,35.8,0,80s35.8,80,80,80
+	s80-35.8,80-80S124.2,0,80,0L80,0z"
+                ></path>
+              </svg>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-2 mb-md-0">
-            <div class="primary-care p-3 p-md-4">
-              <div class="space py-4"></div>
-              <h3 class="display-1 text-center">
-                Primary <br />
-                Care
-              </h3>
-              <a class="btn btn-primary px-3 py-2 mt-3" href="services.html"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-4 mb-2 mb-2 mb-lg-0 mt-sm-2 mt-lg-0">
-            <div class="mental-health p-3 p-md-4">
-              <div class="space py-4"></div>
-              <h3 class="display-1 text-center">
-                Mental <br />
-                Health
-              </h3>
-              <a class="btn btn-primary px-3 py-2 mt-3" href="services.html"
-                >Learn More</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 d-flex flex-column justify-content-center">
-            <p class="small text-primary fw-bold mb-0">who we are</p>
-            <h2 class="display-2 text-dark">About Fenix PTP</h2>
-            <p>
-              We think differently about rehabilitation.We provide an
-              unparalleled healthcare service:  one-on-one treatment with a
-              Doctor of Physical Therapy for 60 minutes. We do more than just
-              treat the symptoms; we search for the cause of the issue.  We can
-              “get you back” to your old self faster because of the time we
-              spend with each person.
+
+          <div class="text-wrapper">
+            <h5 class="font-ubuntu fw-regular">Healthy brain stimulation</h5>
+            <p class="font-open-sans">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
             </p>
-            <ul class="primary-marker">
-              <li class="mt-2">Professional and Certified Therapists</li>
-              <li class="mt-2">High-Quality Service</li>
-              <li class="mt-2">24/7 Online Support</li>
-            </ul>
-          </div>
-          <div class="col-md-7">
-            <div class="row p-0">
-              <div class="col-lg-7">
-                <img class="w-100" src="images/about-fenix-ptp.png" alt="" />
-              </div>
-              <div class="col-lg-5">
-                <div class="shadow p-3 bg-white text-center">
-                  <h2 class="display-1 text-primary">10+</h2>
-                  <p>Years of Experience</p>
-                  <hr class="border-black mb-2 mt-2" />
-                  <p>
-                    We help people who are frustrated that their symptoms keep
-                    worsening despite their own efforts and the “good advice”
-                    they get.
-                  </p>
-                  <a href="Contact-us.html" class="btn btn-primary px-3 py-2">
-                    Contact Us
-                  </a>
-                </div>
-              </div>
-            </div>
+            <p class="u-text u-text-4">
+              Images from
+              <a href="https://www.freepik.com/photos/technology">Freepik</a>
+            </p>
+            <button class="btn border bg-primary text-white">Learn More</button>
           </div>
         </div>
       </div>
     </section>
-    <section class="py-5 bg-black">
+
+    <!-- Features Section -->
+    <section class="features-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mt-2 mb-2">
-            <div class="card position-reletaive bg-black rounded-md">
-              <img
-                class="card-img-top"
-                src="/images/BACK-PAIN.png"
-                alt="BACK PAIN IMAGE"
-              />
-              <div
-                class="card-body position-absolute top-auto bottom-0 w-100 bg-primary rounded-md"
-              >
-                <h5 class="card-title mb-0 text-white display-3 text-center">
-                  BACK PAIN
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mt-2 mb-2">
-            <div class="card position-reletaive bg-black rounded-md">
-              <img
-                class="card-img-top"
-                src="/images/SHOULDER-PAIN.png"
-                alt="SHOULDER PAIN IMAGE"
-              />
-              <div
-                class="card-body position-absolute top-auto bottom-0 w-100 bg-primary rounded-md"
-              >
-                <h5 class="card-title mb-0 text-white display-3 text-center">
-                  SHOULDER PAIN
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mt-2 mb-2">
-            <div class="card position-reletaive bg-black rounded-md">
-              <img
-                class="card-img-top"
-                src="/images/NECK-PAIN.png"
-                alt="NECK PAIN IMAGE"
-              />
-              <div
-                class="card-body position-absolute top-auto bottom-0 w-100 bg-primary rounded-md"
-              >
-                <h5 class="card-title mb-0 text-white display-3 text-center">
-                  NECK PAIN
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mt-2 mb-2">
-            <div class="card position-reletaive bg-black rounded-md">
-              <img
-                class="card-img-top"
-                src="/images/ANKLE-PAIN.png"
-                alt="ANKLE PAIN IMAGE"
-              />
-              <div
-                class="card-body position-absolute top-auto bottom-0 w-100 bg-primary rounded-md"
-              >
-                <h5 class="card-title mb-0 text-white display-3 text-center">
-                  ANKLE PAIN
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mt-2 mb-2">
-            <div class="card position-reletaive bg-black rounded-md">
-              <img
-                class="card-img-top"
-                src="/images/HIP-PAIN.png"
-                alt="HIP PAIN IMAGE"
-              />
-              <div
-                class="card-body position-absolute top-auto bottom-0 w-100 bg-primary rounded-md"
-              >
-                <h5 class="card-title mb-0 text-white display-3 text-center">
-                  HIP PAIN
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mt-2 mb-2">
-            <div class="card position-reletaive bg-black rounded-md">
-              <img
-                class="card-img-top"
-                src="/images/KNEE-PAIN.png"
-                alt="KNEE PAIN IMAGE"
-              />
-              <div
-                class="card-body position-absolute top-auto bottom-0 w-100 bg-primary rounded-md"
-              >
-                <h5 class="card-title mb-0 text-white display-3 text-center">
-                  KNEE PAIN
-                </h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-5">
-      <div class="container shadow p-4 rounded-lg">
-        <div class="row">
-          <div class="col-12">
-            <div class="text-center">
-              <h3 class="display-2">GET A FREE CONSULTATION</h3>
-              <p>
-                Fill out the from below and we will get back to you asap. Please
-                allow 24 hours for us to respond via from submission. For
-                Quicker response times please
-                <a href="tel:480-788-0399" class="text-primary underline"
-                  >CALL 480-788-0399</a
-                >
-              </p>
-            </div>
-
-            <form action="" method="POST" class="mt-4">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label class="fw-sami-bold" for="firstName">First Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="firstName"
-                    name="firstName"
-                    placeholder="John"
-                    required=""
-                  />
-                </div>
-                <div class="form-group col-md-6">
-                  <label class="fw-sami-bold" for="lastName">Last Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="lastName"
-                    name="lastName"
-                    placeholder="Doe"
-                    required=""
-                  />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label class="fw-sami-bold" for="email">Your Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="Enter Email"
-                    required=""
-                  />
-                </div>
-                <div class="form-group col-md-6">
-                  <label class="fw-sami-bold" for="phone">Phone Number</label>
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="phone"
-                    name="phone"
-                    placeholder="Phone Number"
-                    required=""
-                  />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group col-12">
-                  <label class="fw-sami-bold" for="Comments">Comments</label>
-                  <textarea
-                    name="Comments"
-                    class="form-control"
-                    placeholder="Enter your Message"
-                    id="Comments"
-                    cols="30"
-                    rows="5"
-                  ></textarea>
-                </div>
-              </div>
-              <div class="text-center mt-3">
-                <button type="submit" class="btn btn-primary px-3 py-2">
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-5 bg-purple-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="text-center">
-              <h3 class="display-2">
-                CHOOSE YOUR PREFERRED OPTION AND START YOUR PATH <br />
-                TO PAIN FREE NOW
-              </h3>
-              <p>
-                We provide full-hour sessions of one-on-one care with kind &
-                patient and a holistic approach to treating the entire <br />
-                person for a more complete and lasting return to the active life
-                you desire.
+        <div class="feature-card-wrapper">
+          <div class="feature-card">
+            <div class="text-wrapper">
+              <h4 class="font-ubuntu fw-bold">Video games</h4>
+              <p class="font-open-sans">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text.
               </p>
             </div>
           </div>
-        </div>
-        <div class="text-center">
-          <a class="btn btn-primary px-2 py-2 mt-1" href="tel:480-788-0399"
-            >Call Now : 480 - 788 - 0399</a
-          >
-        </div>
-      </div>
-    </section>
-    <section class="py-5 testmonials">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="text-center">
-              <div class="small text-primary fw-bold mb-0">
-                WHAT WE’RE OFFERING
-              </div>
-              <h3 class="display-2">SEE WHAT OUR CLIENTS SAY</h3>
-              <iframe
-                src="https://sotellus.com/iframe/fenix-physical-therapy-performance/"
-                width="100%"
-                height="375"
-                class="border-0"
-              ></iframe>
+          <div class="feature-card">
+            <div class="text-wrapper">
+              <h4 class="font-ubuntu fw-bold">Video games</h4>
+              <p class="font-open-sans">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text.
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-5 report-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="text-center display-2 text-white">
-              FREE Report: 7 Ways To End Neck Pain & Headaches
-            </h2>
+          <div class="feature-card">
+            <div class="text-wrapper">
+              <h4 class="font-ubuntu fw-bold">Video games</h4>
+              <p class="font-open-sans">
+                Sample text. Click to select the text box. Click again or double
+                click to start editing the text.
+              </p>
+            </div>
           </div>
-          <div
-            class="col-md-6 text-white d-flex flex-column justify-content-center align-items-start"
-          >
-            <ul class="white-marker">
-              <li class="mt-2">
-                Do you have aches and pains in your back, neck, shoulder, hip,
-                or knee? Are you suffering from headaches or migraines?
-              </li>
-              <li class="mt-2">
-                Are you trying to become more active and fit but can't because
-                aches and pains are “holding you back”?
-              </li>
-              <li class="mt-2">
-                Are you an athlete with a lingering issue that “won’t go away”?
-              </li>
-            </ul>
-            <p class="mt-3">
-              We help people every day who are tired of missing out on time with
-              their family and are tired of taking pain meds. We help people who
-              are frustrated that their symptoms keep worsening despite their
-              own efforts and the “good advice” they get.
-            </p>
+          <p class="u-text u-text-4 text-right text-white">
+            Images from
             <a
-              href="Contact-us.html"
-              class="btn bg-white text-primary px-5 py-2 w-100 w-md-auto mb-3 mb-md-0"
+              class="text-white"
+              href="https://www.freepik.com/photos/technology"
+              >Freepik</a
             >
-              Get Started
-            </a>
-          </div>
-          <div class="col-md-6 position-reletaive">
-            <img src="images/book.png" alt="" class="w-100" />
-            <img
-              src="images/Arrow.png"
-              alt=""
-              class="position-absolute bottom-0 d-none d-md-block"
-            />
-          </div>
+          </p>
         </div>
       </div>
     </section>
-    <section class="py-5">
-      <div class="container">
-        <div class="swiper pb-5">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="position-relative">
-                <img
-                  src="images/Sar-Success-story.png"
-                  alt="Image"
-                  class="img-fluid"
-                />
-                <div class="overlap-wrapper text-white text-center">
-                  <img src="images/icon-for-sara-story.png" alt="" />
-                  <h2 class="display-2 mt-2">Sara, 30's</h2>
-                  <h4 class="display-4 mt-2">Serious Knee Injury</h4>
-                  <p class="mt-2">
-                    I have been to many doctors and physical therapist in my
-                    life time; Austin is the ONLY one I have ever recommended to
-                    a family member and a friend; several in fact. He is
-                    the only one .
-                  </p>
-                  <a href="#" class="btn btn-primary mt-3 px-3 px-md-5 py-2"
-                    >Read More About</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="position-relative">
-                <img
-                  src="images/Robert-Success-story.png"
-                  alt="Image"
-                  class="img-fluid"
-                />
-                <div class="overlap-wrapper text-white text-center">
-                  <img src="images/icon-for-robert-story.png" alt="" />
-                  <h2 class="display-2 mt-2">Robert, 50's</h2>
-                  <h4 class="display-4 mt-2">Chronic neck and foot pain</h4>
-                  <p class="mt-2">
-                    I have a chronic neck and foot condition that requires
-                    special attention, and Dr. Fair has been able to
-                    substantially reduce my pain level and keep me from having
-                    surgery.
-                  </p>
-                  <a href="#" class="btn btn-primary mt-3 px-3 px-md-5 py-2"
-                    >Read More About</a
-                  >
-                </div>
-              </div>
-            </div>
 
-            <div class="swiper-slide">
-              <div class="position-relative">
-                <img
-                  src="images/Robert-Success-story.png"
-                  alt="Image"
-                  class="img-fluid"
-                />
-                <div class="overlap-wrapper text-white text-center">
-                  <img src="images/icon-for-david-story.png" alt="" />
-                  <h2 class="display-2 mt-2">David, 30's</h2>
-                  <h4 class="display-4 mt-2">A Fire Fighte</h4>
-                  <p class="mt-2">
-                    I have been playing sports all my life, from 4 years old
-                    through college. Through growing up and now in my career as
-                    a fire fighter, I’ve always had to train and perform at the
-                    highest level.
-                  </p>
-                  <a href="#" class="btn btn-primary mt-3 px-3 px-md-5 py-2"
-                    >Read More About</a
-                  >
-                </div>
+    <!-- Swiper Section -->
+    <section class="swiper-section">
+      <div class="container">
+        <img src="/images/slider-section-image.jpeg" width="100%" alt="" />
+        <div class="swiper">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h4>Top PC Games</h4>
+                <p>
+                  Auctor augue mauris augue neque gravida in fermentum et.
+                  Feugiat in fermentum posuere urna nec tincidunt praesent
+                  semper.
+                </p>
+                <button class="btn bg-primary text-white">Learn More</button>
+              </div>
+              <div class="swiper-slide">
+                <h4>Top PC Games</h4>
+                <p>
+                  Auctor augue mauris augue neque gravida in fermentum et.
+                  Feugiat in fermentum posuere urna nec tincidunt praesent
+                  semper.
+                </p>
+                <button class="btn bg-primary text-white">Learn More</button>
+              </div>
+              <div class="swiper-slide">
+                <h4>Top PC Games</h4>
+                <p>
+                  Auctor augue mauris augue neque gravida in fermentum et.
+                  Feugiat in fermentum posuere urna nec tincidunt praesent
+                  semper.
+                </p>
+                <button class="btn bg-primary text-white">Learn More</button>
+              </div>
+              <div class="swiper-slide">
+                <h4>Top PC Games</h4>
+                <p>
+                  Auctor augue mauris augue neque gravida in fermentum et.
+                  Feugiat in fermentum posuere urna nec tincidunt praesent
+                  semper.
+                </p>
+                <button class="btn bg-primary text-white">Learn More</button>
+              </div>
+              <div class="swiper-slide">
+                <h4>Top PC Games</h4>
+                <p>
+                  Auctor augue mauris augue neque gravida in fermentum et.
+                  Feugiat in fermentum posuere urna nec tincidunt praesent
+                  semper.
+                </p>
+                <button class="btn bg-primary text-white">Learn More</button>
+              </div>
+              <div class="swiper-slide">
+                <h4>Top PC Games</h4>
+                <p>
+                  Auctor augue mauris augue neque gravida in fermentum et.
+                  Feugiat in fermentum posuere urna nec tincidunt praesent
+                  semper.
+                </p>
+                <button class="btn bg-primary text-white">Learn More</button>
               </div>
             </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
-          <div class="swiper-pagination mt-5"></div>
         </div>
       </div>
     </section>
-    <footer class="pt-5 bg-black">
+
+    <!-- Gadgets Section -->
+    <section class="gadgets-section">
       <div class="container">
-        <div class="row">
-          <div class="col text-center text-white">
-            <a class="navbar-brand" href="/"
-              ><img src="images/logo-for-footer.png" class="img-fluid" alt=""
-            /></a>
-            <div class="mt-3">
-              <a href="/" class="text-white pr-3">Home</a>
-              <a href="Services.html" class="text-white pr-3">Services</a>
-              <a href="Contact-us.html" class="text-white pr-3">Contact Us</a>
-              <a href="privacy-policy.html" class="text-white pr-3"
-                >Privacy Policy</a
-              >
+        <h2 class="font-ubuntu fw-bold text-white">
+          Gadgets for <br />
+          your game
+        </h2>
+        <button class="btn border text-white">View All</button>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download-section">
+      <div class="container text-center">
+        <h5 class="font-ubuntu fw-regular text-center">
+          Looking for games to download for free?
+        </h5>
+        <br />
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore <br />
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, <br />
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <br />
+        <button class="btn bg-primary text-white">Read More</button>
+        <br />
+        <br />
+        <img src="/images/download-section-image.jpeg" width="70%" alt="" />
+      </div>
+    </section>
+
+    <!-- VR Technologies Section -->
+    <section class="vr-technologies-section">
+      <div class="container">
+        <div class="text-wrapper">
+          <h5 class="font-ubuntu fw-regular">VR Technologies</h5>
+          <br />
+          <p class="font-open-sans">
+            Excepteur sint occaecat cupidatat non , sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+          </p>
+          <br />
+          <p class="u-text u-text-4">
+            Images from
+            <a href="https://www.freepik.com/photos/technology">Freepik</a>
+          </p>
+          <br />
+          <button class="btn border text-black">View All</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contacts-section">
+      <div class="container">
+        <div class="flex-wrapper">
+          <div class="image-wrapper">
+            <img src="images/gggg-min.jpeg" width="100%" alt="" />
+          </div>
+          <div class="text-wrapper">
+            <h5>contact form</h5>
+            <br />
+            <form action="">
+              <div class="input-field">
+                <input type="text" placeholder="Enter your Name" />
+              </div>
+              <div class="input-field">
+                <input type="email" placeholder="Enter your Valid Email" />
+              </div>
+              <div class="input-field">
+                <textarea
+                  placeholder="Enter your Message"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <button class="btn bg-primary text-white">Submit</button>
+            </form>
+            <br /><br />
+            <h5>follow us</h5>
+            <br />
+            <div class="social-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-google-plus"></i>
             </div>
-            <p class="mt-3">
-              18477 S. 186th Way Suite 102 Queen Creek, AZ 85142
-            </p>
-            <hr class="mt-5 border-white opacity-25" />
-            <p class="small">Copyright © Fenix PTP | 2017</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-darken" style="padding: 30px 0">
+      <div class="container">
+        <div class="text-center text-white">
+          Sample text. Click to select the text box. Click again or double
+          <br />
+          click to start editing the text.
+        </div>
+        <p class="text-center text-white" style="margin-top: 60px">
+          <a class="text-center text-white" href="#">Website Templates</a>
+          created with
+          <a class="text-center text-white" href="#"
+            >Website Builder Software.</a
+          >
+        </p>
       </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="files/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
